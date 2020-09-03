@@ -3,7 +3,19 @@
 
   </head>
   <body>
-    <input type ="text" >
+    <div id ="todo">
+    Numero uno: <input type ="number" id ="numeroUno"[(ngModel)]="edadUno"> <br>
+    Numero dos: <input type ="number" id="numeroDos" [(ngModel)]="edadDos">
+    <br>
+    <input type= "button" id="btnCalcular" value = "Calcular" (click)="sumar()">
+    <br>
+    <input type= "button" id="btnLimpiar" value ="Limpiar" (click)="limpiar()" >
+    <br>
+    Suma: <input type ="text" id="rSuma" [(ngModel)]="suma" value = "Suma:">
+    <br>
+    Promedio: <input type ="text" id="rPromedio" [(ngModel)]="promedio" value= "Promedio:">
+  </div>
+
   </body>
 </html>
 
