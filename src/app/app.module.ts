@@ -5,17 +5,21 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { BienvenidoComponent } from './componentes/bienvenido/bienvenido.component';
 import { ErrorComponent } from './componentes/error/error.component';
+import { AppRoutingModule } from './app-routing.module';
+import { Ejercicio1Component } from './componentes/ejercicio1/ejercicio1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     BienvenidoComponent,
-    ErrorComponent
+    ErrorComponent,
+    Ejercicio1Component
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
