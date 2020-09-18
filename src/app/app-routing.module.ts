@@ -4,13 +4,17 @@ import { BienvenidoComponent } from './componentes/bienvenido/bienvenido.compone
 import { ErrorComponent } from './componentes/error/error.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { Ejercicio1Component } from './componentes/ejercicio1/ejercicio1.component';
+import { ControlEntidadComponent } from './componentes/control-entidad/control-entidad.component';
 
 const routes: Routes = [
   { path: 'home', component: BienvenidoComponent },
   { path: 'login', component: LoginComponent },
   { path: 'error', component: ErrorComponent },
   { path: 'ejercicio1', component: Ejercicio1Component},
-  { path: '**', redirectTo: 'home'}
+  { path: 'paises/listado', component: ControlEntidadComponent},
+
+  { path: '**', redirectTo: 'home'},
+
 ];
 
 @NgModule({
