@@ -18,6 +18,7 @@
   <tbody *ngIf="listadoUsers">
 
       <tr *ngFor="let user of listadoUsers" >
+        <td>{{user.email}}</td>
           <td >{{user.Nombre}}</td>
           <td>{{user.Apellido}}</td>
 
